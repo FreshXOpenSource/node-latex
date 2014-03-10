@@ -114,6 +114,7 @@ module.exports = function(doc, options) {
         "texput.tex"
       ], {
         cwd: dirpath,
+        stdio: 'ignore',
         env: process.env
       });
       //Wait for LaTeX to finish its thing
