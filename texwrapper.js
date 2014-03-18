@@ -111,6 +111,7 @@ module.exports = function(doc, options) {
       //Invoke LaTeX
       var tex = spawn(tex_command, [
         "-interaction=nonstopmode",
+        "--shell-escape",
         "texput.tex"
       ], {
         cwd: dirpath,
